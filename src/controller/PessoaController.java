@@ -1,4 +1,4 @@
-package controller.controller;
+package controller;
 
 import model.service.PessoaService;
 
@@ -10,8 +10,16 @@ public class PessoaController {
         this.pessoaService = pessoaService;
     }
 
+
+    // creat C
     public void criarPessoa() {
         pessoaService.criar();
-        IO.println("Criado com sucesso!!!");
+        IO.println("CRIAÇÃO REALIZADA ");
     }
+
+    //read R
+    public void mostarPessoas() {
+        pessoaService.mostarPessoas();
+    }
+
 }

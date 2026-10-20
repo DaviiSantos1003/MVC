@@ -1,13 +1,21 @@
 package model.entity;
 
-public class TarefaEntity {
+public class Tarefa {
 
     private int id;
     private String titulo;
     private String descricao;
     private Status status;
 
-    public TarefaEntity() {
+    public Tarefa() {
+
+    }
+
+    public Tarefa(int id, String titulo, String descricao, Status status) {
+        this.id = id;
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.status = status;
     }
 
     public int getId() {
@@ -40,5 +48,15 @@ public class TarefaEntity {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Tarefa{" +
+                "id=" + id +
+                ", titulo='" + titulo + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", status=" + status +
+                '}';
     }
 }

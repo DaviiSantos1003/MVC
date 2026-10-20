@@ -1,20 +1,20 @@
 package model.entity;
 
-public class PessoaEntity {
+public class Pessoa {
 
-    private int id;
+    private int id = 0;
     private String nome;
     private String email;
     private String senha;
 
-    public PessoaEntity(int id, String nome, String email, String senha) {
+    public Pessoa() {
+    }
+
+    public Pessoa( int id,String nome, String email, String senha) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.senha = senha;
-    }
-
-    public PessoaEntity() {
     }
 
     public int getId() {
@@ -51,7 +51,7 @@ public class PessoaEntity {
 
     @Override
     public String toString() {
-        return "PessoaEntity{" +
+        return "Pessoa{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", email='" + email + '\'' +
