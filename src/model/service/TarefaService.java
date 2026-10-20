@@ -1,3 +1,4 @@
+
 package model.service;
 
 import model.entity.Status;
@@ -18,12 +19,6 @@ public class TarefaService {
         tarefa.setId(id++);
         tarefa.setTitulo(IO.readln("Digite o título da tarefa: "));
         tarefa.setDescricao(IO.readln("Digite a descrição da tarefa: "));
-
-        Set<Status> statusDisponiveis = Set.of(
-                Status.PENDENTE,
-                Status.EM_ANDAMENTO,
-                Status.CONCLUIDA
-        );
 
         IO.println("1 - Pendente");
         IO.println("2 - Em andamento");
